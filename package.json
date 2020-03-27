@@ -1,0 +1,26 @@
+{
+  "name": "gk.dustin-dm.de",
+  "version": "1.0.0",
+  "description": "This is a social studies project for my school. We are supposed to collect news over several days and then put it into a more structured form. I have taken a website",
+  "main": "webinterfacemain.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DustinDEV2more/GK-School-Projekt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DustinDEV2more/GK-School-Projekt/issues"
+  },
+  "homepage": "https://github.com/DustinDEV2more/GK-School-Projekt#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookies": "^0.8.0",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0"
+  }
+}
