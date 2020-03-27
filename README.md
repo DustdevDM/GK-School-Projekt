@@ -5,7 +5,6 @@
         A Website written in Node.js
     </strong><br>
   <p>This is a social studies project for my school. We are supposed to collect news over several days and then put it into a more structured form. I have taken a website</p>
-   <img alt="npm" src="https://img.shields.io/npm/v/discord.js?color=red&label=Discord.js&logo=npm&logoColor=red&style=for-the-badge">
-    
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/DustinDEV2more/GK-School-Projekt?style=for-the-badge">
 <br>
 </div>
