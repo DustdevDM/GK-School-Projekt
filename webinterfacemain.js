@@ -23,32 +23,11 @@ class WebSocket {
         this.app.use(cookies.express(["some", "random", "keys"]))
 
 
-        this.registerRoots()
 
         
         this.server = this.app.listen(port, () => {
             console.log("Der Websocket läuft auf dem Port: " + this.server.address().port)
         })
-    }
-
-
-
-    registerRoots() {
-
-        this.app.get("/bot-pb", (req, res) => {
-            res.redirect(this.client.user.displayAvatarURL)
-        })
-
-        this.app.get("/online", (req,res) => {
-            res.render("index")
-        })
-
-        this.app.get("/server-pb", (req, res) => {
-            res.redirect(this.client.guilds.get("585511241628516352").iconURL)
-        })
-
-      
-    
     
     }
 
