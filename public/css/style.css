@@ -44,22 +44,22 @@ body {
    font-weight: 200px;
 }
 
-.navigation {
-    height: 100%;
-    float: right;
+
+.navbar {
+    color: #fbc531;
 }
 
-.navigation a{
-height: 100%;
-display: table;
-float: left;
-padding: 0px 20px;
+.footer {
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color: #fbc531;
 }
-
-.navigation a li{
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-    color: #2f3640;
-    font-size: 16px;
+.innerfooter {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
 }
