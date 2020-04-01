@@ -1,5 +1,21 @@
-<div class="news_header">
-    <div class="news_header_img">
-        <img src="" alt="">
+<!-- 
+<% news.forEach(n => { %>
+
+<h3><%= n.t %> - <%= n.date %> </h3>
+<p><%= n.prevtxt %></p>
+
+<% }) %> -->
+
+<% news.forEach(n => { %>
+<div class="news_headerrrr">
+    <div class="news_img">
+        <img src="<%= n.pic %> " alt="<%= n.id %> ">
+    </div>
+    <div class="news_info">
+        <div class="news_date"><span><%= n.date %></span></div>
+        <h2 class="news_title"><%= n.t %> </h2>
+        <p class="news_prewtext"><%= n.prevtxt %> [...]</p>
+        <a href="/<%= n.id %>" class="news_cta">Artikel öffnen</a>
     </div>
 </div>
+<% }) %>

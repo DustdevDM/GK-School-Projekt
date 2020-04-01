@@ -4,7 +4,7 @@ const Schema = mongoose.Schema({
     id: Number,
     date: String,
     pic: String,
-    ü: String,
+    t: String,
     prevtxt: String,
     txt: String,
     q: String
