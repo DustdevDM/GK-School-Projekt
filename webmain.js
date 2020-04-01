@@ -13,7 +13,7 @@ const Websocket = require("./webinterfacemain")
 var WS = new Websocket("1234", 34875)
 
 var NEWS = require("./models/NEWS")
-var newnews = require("./newfile")
+//var newnews = require("./newfile")
 
 WS.app.get("/",async (req,res) => {
 var newsfromdb = await NEWS.find({})
