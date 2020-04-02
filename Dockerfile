@@ -16,4 +16,4 @@ RUN npm install
 COPY . .
 
 EXPOSE 34875
-CMD [ "node", "index.js" ]
+CMD [ "node", "webmain.js" ]
