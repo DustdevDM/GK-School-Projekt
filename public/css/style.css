@@ -102,3 +102,32 @@ img {
     background-image: linear-gradient(to right, #7bfb31 0%, #02ff41 100%);
     text-decoration: none;
 }
+
+.artimg{
+    margin: 30px;
+    width: 1080;
+}
+
+.artimg img {
+    border-radius: 30px;
+}
+.title {
+    margin-top: 30px;
+text-align: center;
+}
+
+.arttext {
+    margin: 30px;
+}
+
+.artquelle {
+    color: gray;
+    text-decoration: none;
+    align-items: center;
+
+}
+
+.artquelle:hover {
+    color: #fbc531;
+    text-decoration: underline;
+}

@@ -17,8 +17,18 @@ var NEWS = require("./models/NEWS")
 
 WS.app.get("/",async (req,res) => {
 var newsfromdb = await NEWS.find({})
-    res.render("index.ejs", {news: newsfromdb})
+    res.render("index", {news: newsfromdb})
 })
+
+WS.app.get("/about", (req, res) => {
+res.render("about.ejs")
+})
+
+WS.app.get("/news/:id",async (req,res) => {
+    var newsfromdb = await NEWS.find({id: req.params.id})
+        if (newsfromdb.length == 0) return res.render("404", {message: "Der Artikel mit der ID " + req.params.id + " existiert nicht. Bist du dir sicher das du dich nicht vertippt hast?"})
+        res.render("artikel", {info: newsfromdb[0]})
+    })
 
 
 
