@@ -13,7 +13,7 @@ const Websocket = require("./webinterfacemain")
 var WS = new Websocket("1234", 34875)
 
 var NEWS = require("./models/NEWS")
-//var newnews = require("./newfile")
+var newnews = require("./newfile")
 
 WS.app.get("/",async (req,res) => {
 var newsfromdb = await NEWS.find({})
@@ -28,6 +28,11 @@ WS.app.get("/news/:id",async (req,res) => {
     var newsfromdb = await NEWS.find({id: req.params.id})
         if (newsfromdb.length == 0) return res.render("404", {message: "Der Artikel mit der ID " + req.params.id + " existiert nicht. Bist du dir sicher das du dich nicht vertippt hast?"})
         res.render("artikel", {info: newsfromdb[0]})
+    })
+
+    WS.app.use(function(req, res, next){
+        res.status(404);
+        res.render("404", {message: "Hier gibt es nichts zu sehen! (Hoffentlich sieht er nicht den Dreck unter dem Bett)"})
     })
 
 
