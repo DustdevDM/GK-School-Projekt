@@ -2,13 +2,17 @@ var NEWS = require("./models/NEWS")
 
 async function doit() {
     var newnews = new NEWS({
-    id: 10,
+    id: 11,
     date: "29.03.2020",
-    pic: "images/INDEN CORONA.png",
-    t: "Welche Folgen das Corona auf Inden hat",
-    prevtxt: `Durch das Coronavirus ist auch in der indischen Stadt Delhi eine Ausgangssperre verhängt worden. Nun hängen 10.000 Arbeiter verzweifelt in der Hauptstadt fest und versuchen verzweifelt zurück in ihre Heimatdörfer zu kommen. Nach der Ausgangssperre, die von der Regierung kommt wurden viele Menschen, die durch den Arbeitsstopp nicht mehr Arbeiten konnten Obdachlos und Arbeitslos.`,
-    txt: `Durch das Coronavirus ist auch in der indischen Stadt Delhi eine Ausgangssperre verhängt worden. Nun hängen 10.000 Arbeiter verzweifelt in der Hauptstadt fest und versuchen verzweifelt zurück in ihre Heimatdörfer zu kommen. Nach der Ausgangssperre, die von der Regierung kommt wurden viele Menschen, die durch den Arbeitsstopp nicht mehr Arbeiten konnten Obdachlos und Arbeitslos. Wobei zweiteres sich nach der Kreise wieder lösen sollte. Ein Riesiges Gedrängel besteht besonders an allen Bahnhöfen der Statt. Versuche der Polizisten um Ordnung in die Menge zu bekommen sind vergebens. Alle wollen so schnell wie möglich raus. Die Regierung von Uttar Pradesh hat jetzt angekündigt Verkehrsmittel bereits zu stellen, um gestrandete Menschen zurück in ihre Dörfer zu bekommen. (Kommentar des Autors: Wäre der Lockdown der Stadt nicht dann total unnötig?) Auch medizinische Hilfe wurde angekündigt.`,
-    q: "https://www.tagesschau.de/ausland/indien-corona-103.html"
+    pic: "images/coronamonalisa.png",
+    t: "Weniger gefährlich als die Grippe?",
+    prevtxt: `Die ehemalige CDU-Bundestagsabgeordnete Vera Lengsfeld rief am Samstag auf Twitter dazu auf, eine Online-Petition zu unterzeichnen. Darin wird gefordert, dass alle Maßnahmen gegen die Corona-Pandemie sofort aufgehoben werden müssen`,
+    txt: `Die ehemalige CDU-Bundestagsabgeordnete Vera Lengsfeld rief am Samstag auf Twitter dazu auf, eine Online-Petition zu unterzeichnen. Darin wird gefordert, dass alle Maßnahmen gegen die Corona-Pandemie sofort aufgehoben werden müssen. Begründung:
+
+    "Die derzeitige durch das Corona Virus Covid19 hervorgerufene Grippewelle ist nachweislich weit weniger gefährlich als andere Grippewellen, was man z.B. an den Fallzahlen ablesen kann, die das Robert Koch Institut (RKI) täglich bekannt gibt. Demnach lag am 25. März 2020 die Anzahl der Infizierten bei 31.554, die Zahl der Todesfälle bei 149."
+    
+    Dies ist aber in vieler hinsicht einfach nur falsch. Der Vierus heißt nähmlich nicht Covid19 sondern Sars-CoV-2. Die dadurch ausgelöste Krankheit wird Covid19 genannt. Zudem lassen sich aus den Fallzahlen vom 25. März keine generellen Rückschlüsse ziehen, wie gefährlich Covid19 ist. Experten betonen immer wieder, dass man erst am Anfang der Pandemie stehe und dass es eine beträchtliche Dunkelziffer bei den Infizierten gebe und sich auch die Zahl der Todesopfer noch dramatisch erhöhen könne. Gleichzeitig könnten die Maßnahmen zur Eindämmung des Virus auch dazu führen, dass die Zahl der Todesopfer in Deutschland vergleichsweise gering bleibt.`,
+    q: "https://www.tagesschau.de/faktenfinder/corona-grippevergleich-101.html"
 
     }).save().then(console.log("News saved"))
 }
