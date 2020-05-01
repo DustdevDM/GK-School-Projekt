@@ -2,17 +2,15 @@ var NEWS = require("./models/NEWS")
 
 async function doit() {
     var newnews = new NEWS({
-    id: 11,
+    id: 12,
     date: "29.03.2020",
-    pic: "images/coronamonalisa.png",
-    t: "Weniger gefährlich als die Grippe?",
-    prevtxt: `Die ehemalige CDU-Bundestagsabgeordnete Vera Lengsfeld rief am Samstag auf Twitter dazu auf, eine Online-Petition zu unterzeichnen. Darin wird gefordert, dass alle Maßnahmen gegen die Corona-Pandemie sofort aufgehoben werden müssen`,
-    txt: `Die ehemalige CDU-Bundestagsabgeordnete Vera Lengsfeld rief am Samstag auf Twitter dazu auf, eine Online-Petition zu unterzeichnen. Darin wird gefordert, dass alle Maßnahmen gegen die Corona-Pandemie sofort aufgehoben werden müssen. Begründung:
+    pic: "images/egrhfhf.png",
+    t: "Er war verzweifelt und ging von uns",
+    prevtxt: `Der plötzliche Tod von Finanzminister Thomas Schäfer hat im ganzen Land große Bestürzung ausgelöst. Ministerpräsident Bouffier deutete in einem Statement an, dass der Finanzminister sehr unter der Corona-Krise gelitten habe.`,
+    txt: `Der plötzliche Tod von Finanzminister Thomas Schäfer hat im ganzen Land große Bestürzung ausgelöst. Ministerpräsident Bouffier deutete in einem Statement an, dass der Finanzminister sehr unter der Corona-Krise gelitten habe.\n\nDer Schock über den plötzlichen Tod von Finanzminister Thomas Schäfer sitzt auch am Tag danach noch tief. Das war Ministerpräsident Volker Bouffier am Sonntagmittag deutlich anzumerken, als er in der Staatskanzlei in Wiesbaden vor die Mikrofone trat. "Der Anlass ist der traurigste, zu dem wir je eingeladen haben", hatte Staatsekretär Michael Bußer dessen Statement eingeleitet.
 
-    "Die derzeitige durch das Corona Virus Covid19 hervorgerufene Grippewelle ist nachweislich weit weniger gefährlich als andere Grippewellen, was man z.B. an den Fallzahlen ablesen kann, die das Robert Koch Institut (RKI) täglich bekannt gibt. Demnach lag am 25. März 2020 die Anzahl der Infizierten bei 31.554, die Zahl der Todesfälle bei 149."
-    
-    Dies ist aber in vieler hinsicht einfach nur falsch. Der Vierus heißt nähmlich nicht Covid19 sondern Sars-CoV-2. Die dadurch ausgelöste Krankheit wird Covid19 genannt. Zudem lassen sich aus den Fallzahlen vom 25. März keine generellen Rückschlüsse ziehen, wie gefährlich Covid19 ist. Experten betonen immer wieder, dass man erst am Anfang der Pandemie stehe und dass es eine beträchtliche Dunkelziffer bei den Infizierten gebe und sich auch die Zahl der Todesopfer noch dramatisch erhöhen könne. Gleichzeitig könnten die Maßnahmen zur Eindämmung des Virus auch dazu führen, dass die Zahl der Todesopfer in Deutschland vergleichsweise gering bleibt.`,
-    q: "https://www.tagesschau.de/faktenfinder/corona-grippevergleich-101.html"
+    "Die Nachricht traf mich und uns alle völlig unvorbereitet", sagte Bouffier. Er sei "geschockt, fassungslos und unendlich traurig". Seine Gedanken seien in dieser Stunde besonders bei der Familie, der Frau und den Kindern von Thomas Schäfer.\nSchäfers Tod sei ein großer Verlust für das Land Hessen. "Gerade ihn hätten wir in einer so schweren Zeit besonders gebraucht", sagte Bouffier. In solch einer Krise bedürfe es vor allem Besonnenheit und Tatkraft. "Für beides stand Thomas Schäfer".`,
+    q: "https://www.hessenschau.de/politik/ministerpraesident-bouffier-zum-tod-von-thomas-schaefer-er-war-verzweifelt-und-ging-von-uns,schaefer-pk-bouffier-100.html"
 
     }).save().then(console.log("News saved"))
 }
