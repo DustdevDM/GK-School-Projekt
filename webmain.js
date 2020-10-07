@@ -24,6 +24,11 @@ WS.app.get("/about", (req, res) => {
 res.render("about.ejs")
 })
 
+WS.app.get("/loaderio-9f2684c50eeb9768fb9a3bb6005b7080", (req, res) => {
+    res.render("loader-io.ejs")
+    })
+
+
 WS.app.get("/news/:id",async (req,res) => {
     var newsfromdb = await NEWS.find({id: req.params.id})
         if (newsfromdb.length == 0) return res.render("404", {message: "Der Artikel mit der ID " + req.params.id + " existiert nicht. Bist du dir sicher das du dich nicht vertippt hast?"})
