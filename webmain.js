@@ -25,7 +25,7 @@ res.render("about.ejs")
 })
 
 WS.app.get("/loaderio-9f2684c50eeb9768fb9a3bb6005b7080", (req, res) => {
-    res.render("loader-io.ejs")
+    res.send("loaderio-9f2684c50eeb9768fb9a3bb6005b7080")
     })
 
 
